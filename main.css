@@ -6,7 +6,9 @@ body {
  
  /* Display inline-flex to make it a straight line, space between to make them opposite 
  sides from one another, add width to take up the whole page, add fixed position so it
-  can scroll whereever it needs to and a opacity to make it look at little more stylish */
+  can scroll whereever it needs to and a opacity to make it look at little more stylish 
+  with a z index to be above everything so you can still access the links, since the 
+  mission container was overlapping it and not allowing you to click on them*/
 header {  
     display: inline-flex;
     justify-content: space-between;
@@ -14,6 +16,7 @@ header {
     width: 100%;
     position: fixed;
     opacity: .7;
+    z-index: 1;
 }
 .logo {
     padding-left: 35px;   
@@ -38,3 +41,48 @@ a{ /* Removes the link underline from Nav items */
  
 }
 
+/* -------- HEADER  -----------*/
+/* Display flex so we can use align items center and justify-content center of the page, */
+.mission-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* adds just dimensions to the image with a margin top to make it beneath the header */
+.mission-image {
+    width: 1200px;
+    height: 700px;
+    margin-top: 150px;
+ }
+/* makes the position absolute so we can make it centered in the image tag, with is 80% not 100%
+  because 100% width makes the page larger than it should, more htan likely due to margin and or padding some where
+  opacity to make it look a little more cleaner, and a center text, then a top to make the text where we want it for the image, 
+  decided not to center it because of looks
+  */
+span {
+    position: absolute;
+    background-color: black;
+    color: gray;
+    width: 80%;
+    opacity: .9;     
+    align-items: center;
+    top: 70%;
+}
+h2 {  /*changes font size, adds margin 4 on all areas, and makes in centered in its block,    */
+    text-align: center;
+    font-size: 2.5em;
+    margin: 4px   ;
+}
+h4{  /*changes font size, adds margin 4 on all areas, and makes in centered in its block   */
+    text-align: center;
+    margin: 4px   ;
+    font-size: 1.5em;
+}
+/* -------- mission-container -----------*/
+.
+.main-img {
+    width: 300px;
+    height: 200px;
+}
