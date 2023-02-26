@@ -3,16 +3,38 @@ body {
     color: white;
 }
 
-
-header {
+ 
+ /* Display inline-flex to make it a straight line, space between to make them opposite 
+ sides from one another, add width to take up the whole page, add fixed position so it
+  can scroll whereever it needs to and a opacity to make it look at little more stylish */
+header {  
     display: inline-flex;
     justify-content: space-between;
-    border: 1px solid red; 
+    border-bottom: 1px solid seashell; 
     width: 100%;
+    position: fixed;
+    opacity: .7;
+}
+.logo {
+    padding-left: 35px;   
+}
+ul{ /* makes the list items inside one line and not stacking on top of each other. add 
+    justify content and  */
+    display: inline-flex;
+    justify-content: space-evenly;
+    
+    width: 600px;
 }
 
-
-li { 
-    text-decoration: none;
+li { /* Removes the bullet points from the list */
     list-style: none;
 }
+ 
+a{ /* Removes the link underline from Nav items */
+    text-decoration: none;
+    color: gray;
+    font-size: 2em;
+    padding: 15px;
+ 
+}
+
