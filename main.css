@@ -141,7 +141,7 @@ and use the block instead  */
 /* We made it flex, then used justify content to center it in the page,  */
 .locations-container { 
     display: flex;
-    border: 1px solid red;
+     
     justify-content: center;
 }
 /* we used z index to make sure it displayed over the image then used display flex and position absolute so we 
@@ -153,7 +153,7 @@ vertically  */
     width: 1200px;
     height: 700px;
     display: inline-flex;
-    border: 1px solid red;
+     
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -167,7 +167,7 @@ vertically  */
 /* I used display column and I also used <br> in the html to force break the line but by making it a column I no longer needed
 the <br> anymore,  */
 .locations-span div {
-    border: 1px solid red;
+     
     background-color: black;
     margin: 15px 20px;
     width: 300px;
@@ -190,3 +190,22 @@ unware how to do that.  */
     z-index: 1;
     font-size: 3em;
 }  
+
+/* -------- Footer -----------*/
+/* made it flex so I could use the align items and justify content to make it perfectly centered then added a column as a 
+direction since i wanted the text to display vertically  */
+.footer-para {
+    border: 1px solid red;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* just simple margin and wanted the text to appear on left side of the screen, even though it does automitcally
+just wanted to add text-align left incase something added in the future would change that */
+.copyright {
+    border: 1px solid red;
+    margin: 20px;
+    text-align: left;
+}
