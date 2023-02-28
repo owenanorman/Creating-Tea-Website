@@ -69,7 +69,7 @@ a{ /* Removes the link underline from Nav items */
   opacity to make it look a little more cleaner, and a center text, then a top to make the text where we want it for the image, 
   decided not to center it because of looks
   */
-span {
+.mission-span {
     position: absolute;
     background-color: black;
     color: gray;
@@ -132,4 +132,61 @@ and use the block instead  */
     font-weight: 700;
     font-size: 1.2em;
     text-align: center;
+    padding-top: 10px;
  }
+
+
+
+/* -------- Locations-container -----------*/
+/* We made it flex, then used justify content to center it in the page,  */
+.locations-container { 
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+}
+/* we used z index to make sure it displayed over the image then used display flex and position absolute so we 
+could place it on top of the image, we then gave it 100% width and height so it could take up the entire of the container
+and then used justify content center to make it in the center of the image and used align-items center to make it center
+vertically  */
+.locations-span {
+    z-index: 1;
+    width: 1200px;
+    height: 700px;
+    display: inline-flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+/* dimensions for the image  */
+.locations-image {
+    height: 700px;
+    width: 1200px;
+}
+ 
+/* I used display column and I also used <br> in the html to force break the line but by making it a column I no longer needed
+the <br> anymore,  */
+.locations-span div {
+    border: 1px solid red;
+    background-color: black;
+    margin: 15px 20px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    opacity: .8;
+    font-size: 1.2em;
+    z-index: 1;
+    
+}
+/* I want to make the locations title inside the div so I can sit it 15px above the text but I am as of the moment, 
+unware how to do that.  */
+.locations-title  {
+    display: flex;
+    position: absolute;
+    top: 1700px;
+    opacity: .8;
+    z-index: 1;
+    font-size: 3em;
+}  
