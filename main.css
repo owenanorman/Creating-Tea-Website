@@ -195,7 +195,7 @@ unware how to do that.  */
 /* made it flex so I could use the align items and justify content to make it perfectly centered then added a column as a 
 direction since i wanted the text to display vertically  */
 .footer-para {
-    border: 1px solid red;
+     
     height: 200px;
     display: flex;
     align-items: center;
@@ -205,7 +205,7 @@ direction since i wanted the text to display vertically  */
 /* just simple margin and wanted the text to appear on left side of the screen, even though it does automitcally
 just wanted to add text-align left incase something added in the future would change that */
 .copyright {
-    border: 1px solid red;
+     
     margin: 20px;
     text-align: left;
 }
